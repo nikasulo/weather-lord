@@ -4,12 +4,13 @@ A weather application written in ES6, using webpack to manage my modules and fet
 ![screenshot]()
 
 # What it does
-It displays my skills in using JS(ES6) and configuring webpack to handle several file types using devtools like `style-loader`, `node-sass`, `sass-loader` and `url-loader`
+It displays my skills in using JS(ES6), Promises and configuring webpack to handle several file types using devtools like `style-loader`, `node-sass`, `sass-loader` and `url-loader`
 
 ## Built With
 
 - JS(ES6)
 - Webpack
+- Aries Weather's API
 
 ## Live Demo
 
