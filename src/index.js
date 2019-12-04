@@ -45,5 +45,24 @@ const getRegion = (region) => {
   region = region[0];
   return region;
 }
+
+const extractRelevantData = (data) => {
+  const weatherData = data.response[0];
+  const longitude = weatherData.loc.long;
+  const latitude = weatherData.loc.lat;
+  const stationData = weatherData.ob;
+  const icon = stationData.icon;
+  const isDay = stationData.isDay;
+  const tempCelcius = stationData.tempC;
+  const tempFaherneit = stationData.tempF;
+  const feelsLikeC = stationData.feelslikeC;
+  const feelsLikeF = stationData.feelslikeF;
+  const weather = stationData.weather;
+  const region  = getRegion(weatherData.profile.tz);
+  renderData(longitude, latitude, icon, isDay, tempCelcius, tempFaherneit, weather, region, feelsLikeC, feelsLikeF);
+}
+
+
+
   
   
