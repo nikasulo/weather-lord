@@ -24,3 +24,24 @@ export const renderData = (longitude, latitude, icon, isDay, tempCelcius, tempFa
   feelsLike.innerHTML = `Feels like <br> ${feelsLikeC} &#8451;/ ${feelsLikeF}	&#8457;`
 }
 
+export const changeBackground = (isDay, main) => {
+  if (!isDay) {
+    if (main.classList.contains('day')){
+      main.classList.toggle('day');
+    } 
+
+    if (!main.classList.contains('night')){
+      main.classList.toggle('night');
+    } 
+  } else {
+    if (main.classList.contains('night')){
+      main.classList.toggle('night');
+    } 
+
+    if (!main.classList.contains('day')){
+      main.classList.toggle('day');
+    } 
+  }
+}
+
+
