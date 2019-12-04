@@ -62,7 +62,21 @@ const extractRelevantData = (data) => {
   renderData(longitude, latitude, icon, isDay, tempCelcius, tempFaherneit, weather, region, feelsLikeC, feelsLikeF);
 }
 
-
+const fetchNewWeatherData = (e) => {
+  e.preventDefault();
+  const form = document.querySelector('.search-form');
+  const country = form[0].value;
+  getWeatherData(country);
+  }
+  
+  const addEventListeners = () => {
+  document.querySelector('.search-btn').addEventListener('click', (event) => fetchNewWeatherData(event));
+  }
+  
+  window.onload = () => {
+  getWeatherData('nigeria');
+  addEventListeners();
+  }
 
   
   
