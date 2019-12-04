@@ -29,3 +29,16 @@ const getData = (endpoint, action, selector, extraQuery = '') => {
     request.send();
   });
 }
+
+
+const getWeatherData = async (country) => {
+  const countryData = await getData('countries', `${country}`, '?')
+  const countryName = countryData.response.place.name;
+  const countrySymbol = countryData.response.place.iso;
+  renderCountryName(capitalizeString(countryName));
+  const weatherData = await getData('observations', 'search', '?', `query=country:${countrySymbol}&`);
+  extractRelevantData(weatherData);
+}
+
+
+
