@@ -1,8 +1,8 @@
 # Weather Lord
 A weather application written in ES6, using webpack to manage my modules and fetching data from [Aries Weather's API](https://www.aerisweather.com).
 
-![screenshot](src/images/1.jpeg)
-![screenshot](src/images/2.jpeg)
+![screenshot](src/images/1.png)
+![screenshot](src/images/2.png)
 
 # What it does
 It allows users make requests for weather data in various countries. You can view temperature and general weather details.
