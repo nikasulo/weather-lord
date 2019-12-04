@@ -40,5 +40,10 @@ const getWeatherData = async (country) => {
   extractRelevantData(weatherData);
 }
 
-
-
+const getRegion = (region) => {
+  region = region.split('/');
+  region = region[0];
+  return region;
+}
+  
+  
