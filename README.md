@@ -1,15 +1,16 @@
 # Weather Lord
 A weather application written in ES6, using webpack to manage my modules and fetching data from [Aries Weather's API](https://www.aerisweather.com).
 
-![screenshot]()
+![screenshot](src/images/1.jpeg)
+![screenshot](src/images/2.jpeg)
 
 # What it does
-It displays my skills in using JS(ES6), Promises and configuring webpack to handle several file types using devtools like `style-loader`, `node-sass`, `sass-loader` and `url-loader`
+It allows users make requests for weather data in various countries. You can view temperature and general weather details.
 
 ## Built With
 
-- JS(ES6)
-- Webpack
+- JS(ES6), using promises for async requests
+- Webpack `style-loader`, `node-sass`, `sass-loader` and `url-loader`
 - Aries Weather's API
 
 ## Live Demo
