@@ -9,7 +9,9 @@
 main{
   height: 100vh;
   justify-content: center;
+  position: relative;
   align-items: center;
+  background-color: grey;
 }
 
 .row{
@@ -86,6 +88,23 @@ main{
 .main-container{
   width: 40%;
   margin: auto;
+  position: relative;
+}
+
+.sun-gif{
+  position: absolute;
+  animation: reverselightsource .5s ease-in-out 0s 1 forwards normal;
+  img{
+    width: 400px;
+  }
+}
+
+.moon-gif{
+  position: absolute;
+  animation: reverselightsource .5s ease-in-out 0s 1 forwards normal;
+  img{
+    width: 150px;
+  }
 }
 
 .night{
@@ -127,15 +146,70 @@ main{
   }
   
   to{
-    background-color: rgb(255, 217, 0);
+    background-color: rgb(255, 210, 113);
   }
 }
-;
+
+@keyframes sun {
+  0%{
+    opacity: 0;
+    top: -50px;
+    display: block;
+  }
+
+  20%{
+    opacity: 1;
+    top: -30px;
+  }
+
+  100%{
+    opacity: 1;
+    top: 0;
+  }
+}
+
+
+@keyframes moon {
+  0%{
+    opacity: 0;
+    top: -50px;
+  }
+
+  20%{
+    opacity: 1;
+    top: -30px;
+  }
+
+  100%{
+    opacity: 1;
+    top: 50px;
+  }
+}
+
+@keyframes reverselightsource {
+
+  0%{
+    opacity: 1;
+    top: 0;
+  }
+  
+  20%{
+    opacity: 1;
+    top: -30px;
+  }
+
+  100%{
+    opacity: 0;
+    top: -50px;
+  }
+}
+
 .details-card{
   background-color: white;
-  padding: 2em;
+  padding: 1.8em 2em;
   margin-right: 1em;
   border-radius: 5px;
   box-shadow: 0 0 5px .5px black;
   font-family: 'Nunito', sans-serif;
+  font-size: .8em;
 }

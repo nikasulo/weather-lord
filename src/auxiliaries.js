@@ -29,17 +29,24 @@ export const changeBackground = (isDay, main) => {
     if (main.classList.contains('day')){
       main.classList.toggle('day');
     } 
+    
+    document.querySelector('.sun-gif').style.animation = "reverselightsource .5s ease-in-out 0s 1 forwards normal"
 
     if (!main.classList.contains('night')){
       main.classList.toggle('night');
+      document.querySelector('.moon-gif').style.animation = "moon 1s ease-in-out 0s 1 forwards normal"
     } 
   } else {
     if (main.classList.contains('night')){
       main.classList.toggle('night');
+      document.querySelector('.moon-gif').style.animation = "reverselightsource .5s ease-in-out 0s 1 forwards normal"
     } 
 
+    document.querySelector('.moon-gif').style.animation = "reverselightsource .5s ease-in-out 0s 1 forwards normal"
+
     if (!main.classList.contains('day')){
-      main.classList.toggle('day');
+      main.classList.toggle('day')
+      document.querySelector('.sun-gif').style.animation = "sun 1s ease-in-out 0s 1 forwards normal"
     } 
   }
 }
