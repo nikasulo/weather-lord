@@ -45,3 +45,16 @@ export const changeBackground = (isDay, main) => {
 }
 
 
+export const capitalizeString = (string) => {
+  string = string.split(' ');
+  string = string.map((word) => capitalizeWord(word));
+  string = string.join(' ');
+  return string;
+}
+
+export const capitalizeWord = (word) => {
+  word = word.split('');
+  word[0] = word[0].toUpperCase();
+  word = word.join('')
+  return word;
+}
