@@ -21,7 +21,7 @@ It allows users make requests for weather data in various countries. You can vie
 
 To get a local copy up and running follow these simple example steps.
 - Clone the project unto your local machine
-- Navigate into `/views` and open up the `.html` file
+- Navigate into `/dist` and open up the `.html` file
 
 ## 🤝 Contributing
 
