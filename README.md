@@ -15,7 +15,7 @@ It allows users make requests for weather data in various countries. You can vie
 
 ## Live Demo
 
-[Live Demo]()
+[Live Demo](https://rawcdn.githack.com/Oluwadamilareolusakin/weather-lord/2f59652472dbd387bc29a39063ba1000eb4c6358/dist/index.html)
 
 ## Getting Started
 
